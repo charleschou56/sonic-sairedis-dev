@@ -1,4 +1,4 @@
-# sonic-sairedis-dev
+# sonic-sairedis-synd-dev
 
 # Build sonic-swss-common first
 
@@ -6,7 +6,7 @@
 > `git clone --recursive https://github.com/charleschou56/sonic-swss-common.git sonic-swss-common
 cd sonic-swss-common`
 
-- Intall dependency
+- Install dependency
 > `sudo apt-get update`<br>
 `sudo apt-get install python`<br>
 `sudo apt-get install libpython2.7-dev`<br>
@@ -47,26 +47,8 @@ cd sonic-sairedis`
 > `apt-get install libhiredis0.13`<br>
 > `apt-get install libhiredis-dev`<br>
 
-- Modify sonic-sairedis/configure.ac
-
-> +++ configure.ac        2019-03-15 13:23:54.636711544 +0800<br>
-@@ -70,7 +70,6 @@<br>
- CFLAGS_COMMON+=" -Wformat-y2k"<br>
- CFLAGS_COMMON+=" -Wimport"<br>
- CFLAGS_COMMON+=" -Winit-self"<br>
--CFLAGS_COMMON+=" -Winline"<br>
- CFLAGS_COMMON+=" -Winvalid-pch"<br>
- CFLAGS_COMMON+=" -Wlong-long"<br>
- CFLAGS_COMMON+=" -Wmissing-field-initializers"<br>
-@@ -95,7 +94,8 @@<br>
- CFLAGS_COMMON+=" -Wwrite-strings"<br>
- CFLAGS_COMMON+=" -Wno-switch-default"<br>
- CFLAGS_COMMON+=" -Wconversion"<br>
--CFLAGS_COMMON+=" -Wlong-long"<br>
-+CFLAGS_COMMON+=" -Wno-long-long"<br>
-+CFLAGS_COMMON+=" -Wno-implicit-fallthrough"<br>
->
-> AC_SUBST(CFLAGS_COMMON)
+- Patch sonic-sairedis/configure.ac
+> Refer to configure.ac.diff
 
 - Build sonic-sairedis
 > export PERL5LIB=${path_of_sonic-sairedis}/SAI/meta<br>
