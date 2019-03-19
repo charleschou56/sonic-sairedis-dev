@@ -1,7 +1,7 @@
 # sonic-sairedis-synd-dev
 
 - Get source code
-> git clone https://github.com/charleschou56/sonic-sairedis-syncd-dev.git  
+> git clone --recursive https://github.com/charleschou56/sonic-sairedis-syncd-dev.git  
 cd sonic-sairedis-syncd-dev
 
 # Install tools
