@@ -1,0 +1,14 @@
+diff --git a/meta/Makefile b/meta/Makefile
+index b183865..dd2f918 100644
+--- a/meta/Makefile
++++ b/meta/Makefile
+@@ -50,6 +50,9 @@ WARNINGS = \
+ 	-Wno-padded \
+ 	-Wno-switch-enum \
+ 	-Wno-unused-parameter \
++	-Wno-memset-elt-size \
++	-Wno-uninitialized \
++	-Wno-implicit-fallthrough \
+ 	-Wpacked \
+ 	-Wpointer-arith \
+ 	-Wredundant-decls \

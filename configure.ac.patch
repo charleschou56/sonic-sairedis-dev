@@ -1,0 +1,22 @@
+diff --git a/configure.ac b/configure.ac
+index 6acb716..c5b3c40 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -70,7 +70,6 @@ CFLAGS_COMMON+=" -Wformat-security"
+ CFLAGS_COMMON+=" -Wformat-y2k"
+ CFLAGS_COMMON+=" -Wimport"
+ CFLAGS_COMMON+=" -Winit-self"
+-CFLAGS_COMMON+=" -Winline"
+ CFLAGS_COMMON+=" -Winvalid-pch"
+ CFLAGS_COMMON+=" -Wlong-long"
+ CFLAGS_COMMON+=" -Wmissing-field-initializers"
+@@ -95,7 +94,8 @@ CFLAGS_COMMON+=" -Wvariadic-macros"
+ CFLAGS_COMMON+=" -Wwrite-strings"
+ CFLAGS_COMMON+=" -Wno-switch-default"
+ CFLAGS_COMMON+=" -Wconversion"
+-CFLAGS_COMMON+=" -Wlong-long"
++CFLAGS_COMMON+=" -Wno-long-long"
++CFLAGS_COMMON+=" -Wno-implicit-fallthrough"
+ 
+ AC_SUBST(CFLAGS_COMMON)
+ 
