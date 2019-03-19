@@ -8,7 +8,7 @@ cd sonic-sairedis-syncd-dev
 > sh install_tools.sh
 
 # Install dependencies
-> sh install_dependecies.sh
+> sh install_dependencies.sh
 
 # Build
 > sh build.sh
