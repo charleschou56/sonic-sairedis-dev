@@ -2,7 +2,7 @@
 
 ## Get source code
 ```
-git clone --recursive https://github.com/charleschou56/sonic-sairedis-syncd-dev.git  
+git clone --recurse-submodules https://github.com/charleschou56/sonic-sairedis-syncd-dev.git  
 cd sonic-sairedis-syncd-dev
 ```
 
