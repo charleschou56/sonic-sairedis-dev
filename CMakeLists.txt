@@ -25,8 +25,8 @@ message(STATUS "build path: " ${BUILD_PATH})
 
 ## syncdTest ######################################################
 file(GLOB TESTS
-    main.cpp
-    test_syncd.cpp
+    tests/main.cpp
+    tests/test_syncd.cpp
 )
 
 add_executable(${PROJECT_NAME}

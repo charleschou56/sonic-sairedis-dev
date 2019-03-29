@@ -19,16 +19,16 @@ make && make install
 # Prepare swss-common include files and library
 cd ${DIR}
 rm -rf ${DIR}/swss-common
-sh ${DIR}/copy-swss-header-file-and-library.sh ${DIR}/sonic-swss-common ${DIR}/swss-common
+sh ${DIR}/shell/copy-swss-header-file-and-library.sh ${DIR}/sonic-swss-common ${DIR}/swss-common
 
 cd ${DIR}/sonic-sairedis  
 
 # Patch sonic-sairedis/configure.ac
-patch -p1 < ${DIR}/configure.ac.patch
+patch -p1 < ${DIR}/patch/configure.ac.patch
 
 # Patch
 cd  ${DIR}/sonic-sairedis/SAI
-patch -p1 < ${DIR}/SAI_meta_Makefile.patch
+patch -p1 < ${DIR}/patch/SAI_meta_Makefile.patch
 cd ${DIR}/sonic-sairedis
 
 # Build sonic-sairedis
